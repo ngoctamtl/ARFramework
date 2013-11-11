@@ -7,12 +7,25 @@
 //
 
 #import "ARAppDelegate.h"
+#import "ARAboutMeController.h"
+
+@interface ARAppDelegate()
+
+@property (strong,nonatomic) ARAboutMeController *aboutMeController;
+
+@end
 
 @implementation ARAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    self.aboutMeController = [[ARAboutMeController alloc] initWithNibName:@"AboutMeView" bundle:nil];
+    [self.window setRootViewController:self.aboutMeController];
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							

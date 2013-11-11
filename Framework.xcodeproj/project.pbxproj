@@ -21,6 +21,11 @@
 		3AC6781F1830AD9B003ABB2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC678011830AD9B003ABB2B /* UIKit.framework */; };
 		3AC678271830AD9B003ABB2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AC678251830AD9B003ABB2B /* InfoPlist.strings */; };
 		3AC678291830AD9B003ABB2B /* FrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC678281830AD9B003ABB2B /* FrameworkTests.m */; };
+		3AC678421830B2B7003ABB2B /* ARAboutMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC678411830B2B7003ABB2B /* ARAboutMeController.m */; };
+		3AC678461830B319003ABB2B /* AboutMeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AC678451830B319003ABB2B /* AboutMeView.xib */; };
+		3AC6784D1830C6B3003ABB2B /* ARUIImageViewDefaultStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC6784C1830C6B3003ABB2B /* ARUIImageViewDefaultStyle.m */; };
+		3AC678521830D124003ABB2B /* ARUITableViewDefaultStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC678511830D124003ABB2B /* ARUITableViewDefaultStyle.m */; };
+		3AC678561830DAC1003ABB2B /* ARUIButtonDefaultStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC678551830DAC1003ABB2B /* ARUIButtonDefaultStyle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,15 @@
 		3AC678241830AD9B003ABB2B /* FrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FrameworkTests-Info.plist"; sourceTree = "<group>"; };
 		3AC678261830AD9B003ABB2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3AC678281830AD9B003ABB2B /* FrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameworkTests.m; sourceTree = "<group>"; };
+		3AC678401830B2B7003ABB2B /* ARAboutMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARAboutMeController.h; path = Controller/ARAboutMeController.h; sourceTree = "<group>"; };
+		3AC678411830B2B7003ABB2B /* ARAboutMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARAboutMeController.m; path = Controller/ARAboutMeController.m; sourceTree = "<group>"; };
+		3AC678451830B319003ABB2B /* AboutMeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutMeView.xib; path = View/AboutMeView.xib; sourceTree = "<group>"; };
+		3AC6784B1830C6B3003ABB2B /* ARUIImageViewDefaultStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARUIImageViewDefaultStyle.h; path = Style/Default/ARUIImageViewDefaultStyle.h; sourceTree = "<group>"; };
+		3AC6784C1830C6B3003ABB2B /* ARUIImageViewDefaultStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARUIImageViewDefaultStyle.m; path = Style/Default/ARUIImageViewDefaultStyle.m; sourceTree = "<group>"; };
+		3AC678501830D124003ABB2B /* ARUITableViewDefaultStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARUITableViewDefaultStyle.h; path = Style/Default/ARUITableViewDefaultStyle.h; sourceTree = "<group>"; };
+		3AC678511830D124003ABB2B /* ARUITableViewDefaultStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARUITableViewDefaultStyle.m; path = Style/Default/ARUITableViewDefaultStyle.m; sourceTree = "<group>"; };
+		3AC678541830DAC1003ABB2B /* ARUIButtonDefaultStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARUIButtonDefaultStyle.h; path = Style/Default/ARUIButtonDefaultStyle.h; sourceTree = "<group>"; };
+		3AC678551830DAC1003ABB2B /* ARUIButtonDefaultStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARUIButtonDefaultStyle.m; path = Style/Default/ARUIButtonDefaultStyle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				3AC6780F1830AD9B003ABB2B /* Main.storyboard */,
+				3AC678451830B319003ABB2B /* AboutMeView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -206,6 +221,8 @@
 		3AC678381830AFCB003ABB2B /* DeveloperController */ = {
 			isa = PBXGroup;
 			children = (
+				3AC678401830B2B7003ABB2B /* ARAboutMeController.h */,
+				3AC678411830B2B7003ABB2B /* ARAboutMeController.m */,
 				3AC678121830AD9B003ABB2B /* ARViewController.h */,
 				3AC678131830AD9B003ABB2B /* ARViewController.m */,
 			);
@@ -230,6 +247,7 @@
 		3AC6783C1830B061003ABB2B /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				3AC6783F1830B1C6003ABB2B /* AFNetworking */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -244,8 +262,53 @@
 		3AC6783E1830B0AB003ABB2B /* Style */ = {
 			isa = PBXGroup;
 			children = (
+				3AC678471830C64D003ABB2B /* Default */,
 			);
 			name = Style;
+			sourceTree = "<group>";
+		};
+		3AC6783F1830B1C6003ABB2B /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AFNetworking;
+			sourceTree = "<group>";
+		};
+		3AC678471830C64D003ABB2B /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				3AC678531830DAAF003ABB2B /* UIButton */,
+				3AC6784F1830D0FA003ABB2B /* UITableView */,
+				3AC6784E1830D0EF003ABB2B /* UIImageView */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
+		3AC6784E1830D0EF003ABB2B /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				3AC6784B1830C6B3003ABB2B /* ARUIImageViewDefaultStyle.h */,
+				3AC6784C1830C6B3003ABB2B /* ARUIImageViewDefaultStyle.m */,
+			);
+			name = UIImageView;
+			sourceTree = "<group>";
+		};
+		3AC6784F1830D0FA003ABB2B /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				3AC678501830D124003ABB2B /* ARUITableViewDefaultStyle.h */,
+				3AC678511830D124003ABB2B /* ARUITableViewDefaultStyle.m */,
+			);
+			name = UITableView;
+			sourceTree = "<group>";
+		};
+		3AC678531830DAAF003ABB2B /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				3AC678541830DAC1003ABB2B /* ARUIButtonDefaultStyle.h */,
+				3AC678551830DAC1003ABB2B /* ARUIButtonDefaultStyle.m */,
+			);
+			name = UIButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +388,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC678461830B319003ABB2B /* AboutMeView.xib in Resources */,
 				3AC678161830AD9B003ABB2B /* Images.xcassets in Resources */,
 				3AC678081830AD9B003ABB2B /* InfoPlist.strings in Resources */,
 				3AC678111830AD9B003ABB2B /* Main.storyboard in Resources */,
@@ -346,9 +410,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC678521830D124003ABB2B /* ARUITableViewDefaultStyle.m in Sources */,
+				3AC678421830B2B7003ABB2B /* ARAboutMeController.m in Sources */,
 				3AC6780A1830AD9B003ABB2B /* main.m in Sources */,
 				3AC678141830AD9B003ABB2B /* ARViewController.m in Sources */,
 				3AC6780E1830AD9B003ABB2B /* ARAppDelegate.m in Sources */,
+				3AC6784D1830C6B3003ABB2B /* ARUIImageViewDefaultStyle.m in Sources */,
+				3AC678561830DAC1003ABB2B /* ARUIButtonDefaultStyle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
