@@ -32,7 +32,7 @@ static char *KeyHighlightStateColor = "highlightStateColor";
     [self.layer setShadowOffset:CGSizeMake(0.5, 0.5)];
     [self.layer setShadowRadius:1];
     
-    [self setBackgroundColor:[UIColor iOS7blueGradientStartColor] withHighlightColor:[UIColor iOS7tealGradientStartColor]];
+    [self setBackgroundColor:[UIColor MetroEmerald] withHighlightColor:[UIColor iOS7tealGradientStartColor]];
 }
 
 - (void)setBackgroundColor:(UIColor *)backgroundColor withHighlightColor:(UIColor *)highlightColor {

@@ -6,9 +6,167 @@
 //
 //
 
+#define kMetroColorTurquoise    0x1abc9c
+#define kMetroColorEmerald      0x2ecc71
+#define kMetroColorPeterRiver   0x3498db
+#define kMetroColorAmethyst     0x9b59b6
+#define kMetroColorWetAsphalt   0x34495e
+#define kMetroColorGreenSea     0x16a085
+#define kMetroColorNephritis    0x27ae60
+#define kMetroColorBelizeHole   0x2980b9
+#define kMetroColorWisteria     0x8e44ad
+#define kMetroColorMidnightBlue 0x2c3e50
+#define kMetroColorSunFlower    0xf1c40f
+#define kMetroColorCarrot       0xe67e22
+#define kMetroColorAlizarin     0xe74c3c
+#define kMetroColorClouds       0xecf0f1
+#define kMetroColorConcrete     0x95a5a6
+#define kMetroColorOrange       0xf39c12
+#define kMetroColorPumpkin      0xd35400
+#define kMetroColorPomegranate  0xc0392b
+#define kMetroColorSilver       0xbdc3c7
+#define kMetroColorAsbestos     0x7f8c8d
+#define kMetroColorBlue         0x1a8796
+#define kMetroColorGreen        0x4bc1d2
+
 #import "UIColor+iOS7Colors.h"
 
 @implementation UIColor (iOS7Colors)
+
+#pragma mark - Convert color to UIColor
+
++ (UIColor *)colorWithRGBHex:(UInt32)hex {
+    int r = (hex >> 16) & 0xFF;
+    int g = (hex >> 8) & 0xFF;
+    int b = (hex) & 0xFF;
+    
+    return [UIColor colorWithRed:r / 255.0 green:g / 255.0 blue:b / 255.0 alpha:1];
+}
+
++ (UIColor *)colorWithHexString:(NSString *)hexString {
+    NSString *clean = [hexString stringByReplacingOccurrencesOfString:@"#"
+                                                           withString:@""];
+    NSScanner *scanner = [NSScanner scannerWithString:clean];
+    unsigned hexNum;
+    if (![scanner scanHexInt:&hexNum]) {
+        return nil;
+    }
+    return [UIColor colorWithRGBHex:hexNum];
+}
+
+#pragma mark - Metro Colors
+
+
+
++ (instancetype)MetroTurquoise {
+    
+    return [self colorWithRGBHex:kMetroColorTurquoise];
+}
+
++ (instancetype)MetroEmerald {
+    
+    return [self colorWithRGBHex:kMetroColorEmerald];
+}
+
++ (instancetype)MetroPeterRiver {
+    
+    return [self colorWithRGBHex:kMetroColorPeterRiver];
+}
+
++ (instancetype)MetroAmethyst {
+    
+    return [self colorWithRGBHex:kMetroColorAmethyst];
+}
+
++ (instancetype)MetroWetAsphalt {
+    
+    return [self colorWithRGBHex:kMetroColorWetAsphalt];
+}
+
++ (instancetype)MetroGreenSea {
+    
+    return [self colorWithRGBHex:kMetroColorGreenSea];
+}
+
++ (instancetype)MetroNephritis {
+    
+    return [self colorWithRGBHex:kMetroColorNephritis];
+}
+
++ (instancetype)MetroBelizeHole {
+    
+    return [self colorWithRGBHex:kMetroColorBelizeHole];
+}
+
++ (instancetype)MetroWisteria {
+    
+    return [self colorWithRGBHex:kMetroColorWisteria];
+}
+
++ (instancetype)MetroMidnightBlue {
+    
+    return [self colorWithRGBHex:kMetroColorMidnightBlue];
+}
+
++ (instancetype)MetroSunFlower {
+    
+    return [self colorWithRGBHex:kMetroColorSunFlower];
+}
+
++ (instancetype)MetroCarrot {
+    
+    return [self colorWithRGBHex:kMetroColorCarrot];
+}
+
++ (instancetype)MetroAlizarin {
+    
+    return [self colorWithRGBHex:kMetroColorAlizarin];
+}
+
++ (instancetype)MetroClouds {
+    
+    return [self colorWithRGBHex:kMetroColorClouds];
+}
+
++ (instancetype)MetroOrange {
+    
+    return [self colorWithRGBHex:kMetroColorOrange];
+}
+
++ (instancetype)MetroPomegranate {
+    
+    return [self colorWithRGBHex:kMetroColorPomegranate];
+}
+
++ (instancetype)MetroPumpkin {
+    
+    return [self colorWithRGBHex:kMetroColorPumpkin];
+}
+
++ (instancetype)MetroSilver {
+    
+    return [self colorWithRGBHex:kMetroColorSilver];
+}
+
++ (instancetype)MetroAsbestos {
+    
+    return [self colorWithRGBHex:kMetroColorAsbestos];
+}
+
++ (instancetype)MetroBlue {
+    
+    return [self colorWithRGBHex:kMetroColorBlue];
+}
+
++ (instancetype)MetroGreen {
+    
+    return [self colorWithRGBHex:kMetroColorGreen];
+}
+
++ (instancetype)MetroConcrete {
+    
+    return [self colorWithRGBHex:kMetroColorConcrete];
+}
 
 #pragma mark - Plain Colors
 
