@@ -11,6 +11,7 @@
 		3AC31EC41831C07A00903369 /* UIButton+ARDefaultStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC31EC31831C07A00903369 /* UIButton+ARDefaultStyle.m */; };
 		3AC31EC81831CA4700903369 /* UITableView+ARDefaultStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC31EC71831CA4700903369 /* UITableView+ARDefaultStyle.m */; };
 		3AC31ECB1831CA9600903369 /* UIImageView+ARDefaultStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC31ECA1831CA9600903369 /* UIImageView+ARDefaultStyle.m */; };
+		3AC31ECF1831E40600903369 /* UILabel+ARDefaultStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC31ECE1831E40600903369 /* UILabel+ARDefaultStyle.m */; };
 		3AC677FE1830AD9B003ABB2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC677FD1830AD9B003ABB2B /* Foundation.framework */; };
 		3AC678001830AD9B003ABB2B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC677FF1830AD9B003ABB2B /* CoreGraphics.framework */; };
 		3AC678021830AD9B003ABB2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC678011830AD9B003ABB2B /* UIKit.framework */; };
@@ -48,6 +49,9 @@
 		3AC31EC71831CA4700903369 /* UITableView+ARDefaultStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableView+ARDefaultStyle.m"; path = "Style/Default/UITableView+ARDefaultStyle.m"; sourceTree = "<group>"; };
 		3AC31EC91831CA9600903369 /* UIImageView+ARDefaultStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+ARDefaultStyle.h"; path = "Style/Default/UIImageView+ARDefaultStyle.h"; sourceTree = "<group>"; };
 		3AC31ECA1831CA9600903369 /* UIImageView+ARDefaultStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+ARDefaultStyle.m"; path = "Style/Default/UIImageView+ARDefaultStyle.m"; sourceTree = "<group>"; };
+		3AC31ECD1831E40600903369 /* UILabel+ARDefaultStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+ARDefaultStyle.h"; path = "Style/Default/UILabel+ARDefaultStyle.h"; sourceTree = "<group>"; };
+		3AC31ECE1831E40600903369 /* UILabel+ARDefaultStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+ARDefaultStyle.m"; path = "Style/Default/UILabel+ARDefaultStyle.m"; sourceTree = "<group>"; };
+		3AC31ED01831E47900903369 /* ARCategoryExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARCategoryExtensions.h; path = Style/Default/ARCategoryExtensions.h; sourceTree = "<group>"; };
 		3AC677FA1830AD9B003ABB2B /* Framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Framework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC677FD1830AD9B003ABB2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3AC677FF1830AD9B003ABB2B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -103,6 +107,15 @@
 				3AC31EC01831C02600903369 /* UIColor+iOS7Colors.m */,
 			);
 			name = UIColor;
+			sourceTree = "<group>";
+		};
+		3AC31ECC1831E3F000903369 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				3AC31ECD1831E40600903369 /* UILabel+ARDefaultStyle.h */,
+				3AC31ECE1831E40600903369 /* UILabel+ARDefaultStyle.m */,
+			);
+			name = UILabel;
 			sourceTree = "<group>";
 		};
 		3AC677F11830AD9B003ABB2B = {
@@ -289,10 +302,12 @@
 		3AC678471830C64D003ABB2B /* Default */ = {
 			isa = PBXGroup;
 			children = (
+				3AC31ECC1831E3F000903369 /* UILabel */,
 				3AC31EBE1831C01400903369 /* UIColor */,
 				3AC678531830DAAF003ABB2B /* UIButton */,
 				3AC6784F1830D0FA003ABB2B /* UITableView */,
 				3AC6784E1830D0EF003ABB2B /* UIImageView */,
+				3AC31ED01831E47900903369 /* ARCategoryExtensions.h */,
 			);
 			name = Default;
 			sourceTree = "<group>";
@@ -425,6 +440,7 @@
 			files = (
 				3AC31ECB1831CA9600903369 /* UIImageView+ARDefaultStyle.m in Sources */,
 				3AC31EC41831C07A00903369 /* UIButton+ARDefaultStyle.m in Sources */,
+				3AC31ECF1831E40600903369 /* UILabel+ARDefaultStyle.m in Sources */,
 				3AC678421830B2B7003ABB2B /* ARAboutMeController.m in Sources */,
 				3AC6780A1830AD9B003ABB2B /* main.m in Sources */,
 				3AC31EC81831CA4700903369 /* UITableView+ARDefaultStyle.m in Sources */,

@@ -7,7 +7,7 @@
 //
 
 #import "UIButton+ARDefaultStyle.h"
-#import "UIColor+iOS7Colors.h"
+#import "ARCategoryExtensions.h"
 
 #import <objc/runtime.h>
 

@@ -7,7 +7,7 @@
 //
 
 #import "UIImageView+ARDefaultStyle.h"
-#import <QuartzCore/QuartzCore.h>
+#import "ARCategoryExtensions.h"
 
 @implementation UIImageView (ARDefaultStyle)
 
@@ -24,7 +24,7 @@
     
     // Border radius
     [self.layer setBorderWidth:2];
-    [self.layer setBorderColor:[UIColor darkGrayColor].CGColor];
+    [self.layer setBorderColor:[UIColor MetroAsbestos].CGColor];
     
 }
 

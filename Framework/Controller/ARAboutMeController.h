@@ -11,6 +11,7 @@
 @interface ARAboutMeController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak,nonatomic) IBOutlet UIImageView *avatar;
+@property (weak,nonatomic) IBOutlet UILabel *name;
 @property (weak,nonatomic) IBOutlet UITableView *information;
 @property (weak,nonatomic) IBOutlet UIButton *facebookBtn;
 @property (weak,nonatomic) IBOutlet UIButton *githubBtn;

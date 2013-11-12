@@ -11,12 +11,14 @@
 #import "UITableView+ARDefaultStyle.h"
 #import "UIButton+ARDefaultStyle.h"
 #import "UIColor+iOS7Colors.h"
+#import "UILabel+ARDefaultStyle.h"
 
 #import <QuartzCore/QuartzCore.h>
 
 @interface ARAboutMeController()
 
 @property (strong,nonatomic) NSArray *colors;
+@property (strong,nonatomic) NSArray *informations;
 
 @end
 
@@ -25,9 +27,12 @@
 
 - (void)viewDidLoad {
     
+    [self.scrollView setBackgroundColor:[UIColor MetroClouds]];
     [self.avatar defaultStyle];
+    [self.name defaultStyle];
     [self.scrollView setContentSize:CGSizeMake(1000, 10000)];
-    self.colors = @[@"MetroCarrot", @"MetroGreen", @"MetroBlue"];
+    self.colors = @[@"MetroSilver", @"MetroConcrete", @"MetroAsbestos"];
+    self.informations = @[@"iOS Developer", @"University of Science", @"Bachelor of Science"];
 }
 
 #pragma mark - Information TableView datasource
@@ -52,7 +57,7 @@
         cell = [[UITableViewCell alloc] init];
     }
     
-    cell.textLabel.text = @"Hello world";
+    cell.textLabel.text = self.informations[indexPath.row];
     
     return cell;
 }
