@@ -51,16 +51,13 @@
                             <rect key="frame" x="20" y="384" width="92" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                            <state key="normal" title="Facebook">
-                                <color key="titleColor" red="0.24208708379999999" green="0.77218495239999996" blue="0.43915767690000002" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
+                            <state key="normal" title="Facebook"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ky4-tG-w8H">
                             <rect key="frame" x="126" y="384" width="92" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <state key="normal" title="Github">
-                                <color key="titleColor" red="0.24208708379999999" green="0.77218495239999996" blue="0.43915767690000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>
@@ -69,7 +66,6 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <state key="normal" title="Blog">
-                                <color key="titleColor" red="0.24208708379999999" green="0.77218495239999996" blue="0.43915767690000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>

@@ -1,17 +1,17 @@
 //
-//  ARUIButtonDefaultStyle.h
+//  UIButton+ARDefaultStyle.h
 //  Framework
 //
-//  Created by Nhat Huy on 11/11/13.
+//  Created by Nhat Huy on 11/12/13.
 //  Copyright (c) 2013 Mulodo Viet Nam. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface UIButton (ARCategoriesForUIButton)
+@interface UIButton (ARDefaultStyle)
 
-@property (assign,nonatomic) CGColorRef normalStateColor;
-@property (copy,nonatomic) UIColor *highlightColor;
+@property (copy,nonatomic) UIColor *normalStateColor;
+@property (copy,nonatomic) UIColor *highlightStateColor;
 
 /**
  *  Default style of this framework
@@ -28,4 +28,3 @@
 
 
 @end
-

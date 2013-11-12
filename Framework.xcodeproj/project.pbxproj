@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AC31EC11831C02600903369 /* UIColor+iOS7Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC31EC01831C02600903369 /* UIColor+iOS7Colors.m */; };
+		3AC31EC41831C07A00903369 /* UIButton+ARDefaultStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC31EC31831C07A00903369 /* UIButton+ARDefaultStyle.m */; };
 		3AC677FE1830AD9B003ABB2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC677FD1830AD9B003ABB2B /* Foundation.framework */; };
 		3AC678001830AD9B003ABB2B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC677FF1830AD9B003ABB2B /* CoreGraphics.framework */; };
 		3AC678021830AD9B003ABB2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC678011830AD9B003ABB2B /* UIKit.framework */; };
@@ -25,7 +27,6 @@
 		3AC678461830B319003ABB2B /* AboutMeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AC678451830B319003ABB2B /* AboutMeView.xib */; };
 		3AC6784D1830C6B3003ABB2B /* ARUIImageViewDefaultStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC6784C1830C6B3003ABB2B /* ARUIImageViewDefaultStyle.m */; };
 		3AC678521830D124003ABB2B /* ARUITableViewDefaultStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC678511830D124003ABB2B /* ARUITableViewDefaultStyle.m */; };
-		3AC678561830DAC1003ABB2B /* ARUIButtonDefaultStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC678551830DAC1003ABB2B /* ARUIButtonDefaultStyle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3AC31EBF1831C02600903369 /* UIColor+iOS7Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+iOS7Colors.h"; path = "Style/Default/UIColor+iOS7Colors.h"; sourceTree = "<group>"; };
+		3AC31EC01831C02600903369 /* UIColor+iOS7Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+iOS7Colors.m"; path = "Style/Default/UIColor+iOS7Colors.m"; sourceTree = "<group>"; };
+		3AC31EC21831C07A00903369 /* UIButton+ARDefaultStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+ARDefaultStyle.h"; path = "Style/Default/UIButton+ARDefaultStyle.h"; sourceTree = "<group>"; };
+		3AC31EC31831C07A00903369 /* UIButton+ARDefaultStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+ARDefaultStyle.m"; path = "Style/Default/UIButton+ARDefaultStyle.m"; sourceTree = "<group>"; };
 		3AC677FA1830AD9B003ABB2B /* Framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Framework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC677FD1830AD9B003ABB2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3AC677FF1830AD9B003ABB2B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,8 +70,6 @@
 		3AC6784C1830C6B3003ABB2B /* ARUIImageViewDefaultStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARUIImageViewDefaultStyle.m; path = Style/Default/ARUIImageViewDefaultStyle.m; sourceTree = "<group>"; };
 		3AC678501830D124003ABB2B /* ARUITableViewDefaultStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARUITableViewDefaultStyle.h; path = Style/Default/ARUITableViewDefaultStyle.h; sourceTree = "<group>"; };
 		3AC678511830D124003ABB2B /* ARUITableViewDefaultStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARUITableViewDefaultStyle.m; path = Style/Default/ARUITableViewDefaultStyle.m; sourceTree = "<group>"; };
-		3AC678541830DAC1003ABB2B /* ARUIButtonDefaultStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARUIButtonDefaultStyle.h; path = Style/Default/ARUIButtonDefaultStyle.h; sourceTree = "<group>"; };
-		3AC678551830DAC1003ABB2B /* ARUIButtonDefaultStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARUIButtonDefaultStyle.m; path = Style/Default/ARUIButtonDefaultStyle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AC31EBE1831C01400903369 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				3AC31EBF1831C02600903369 /* UIColor+iOS7Colors.h */,
+				3AC31EC01831C02600903369 /* UIColor+iOS7Colors.m */,
+			);
+			name = UIColor;
+			sourceTree = "<group>";
+		};
 		3AC677F11830AD9B003ABB2B = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +289,7 @@
 		3AC678471830C64D003ABB2B /* Default */ = {
 			isa = PBXGroup;
 			children = (
+				3AC31EBE1831C01400903369 /* UIColor */,
 				3AC678531830DAAF003ABB2B /* UIButton */,
 				3AC6784F1830D0FA003ABB2B /* UITableView */,
 				3AC6784E1830D0EF003ABB2B /* UIImageView */,
@@ -305,8 +318,8 @@
 		3AC678531830DAAF003ABB2B /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
-				3AC678541830DAC1003ABB2B /* ARUIButtonDefaultStyle.h */,
-				3AC678551830DAC1003ABB2B /* ARUIButtonDefaultStyle.m */,
+				3AC31EC21831C07A00903369 /* UIButton+ARDefaultStyle.h */,
+				3AC31EC31831C07A00903369 /* UIButton+ARDefaultStyle.m */,
 			);
 			name = UIButton;
 			sourceTree = "<group>";
@@ -410,13 +423,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC31EC41831C07A00903369 /* UIButton+ARDefaultStyle.m in Sources */,
 				3AC678521830D124003ABB2B /* ARUITableViewDefaultStyle.m in Sources */,
 				3AC678421830B2B7003ABB2B /* ARAboutMeController.m in Sources */,
 				3AC6780A1830AD9B003ABB2B /* main.m in Sources */,
+				3AC31EC11831C02600903369 /* UIColor+iOS7Colors.m in Sources */,
 				3AC678141830AD9B003ABB2B /* ARViewController.m in Sources */,
 				3AC6780E1830AD9B003ABB2B /* ARAppDelegate.m in Sources */,
 				3AC6784D1830C6B3003ABB2B /* ARUIImageViewDefaultStyle.m in Sources */,
-				3AC678561830DAC1003ABB2B /* ARUIButtonDefaultStyle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,6 +639,7 @@
 				3AC6782E1830AD9B003ABB2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AC6782F1830AD9B003ABB2B /* Build configuration list for PBXNativeTarget "FrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -633,6 +648,7 @@
 				3AC678311830AD9B003ABB2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

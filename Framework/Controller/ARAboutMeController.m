@@ -9,7 +9,7 @@
 #import "ARAboutMeController.h"
 #import "ARUIImageViewDefaultStyle.h"
 #import "ARUITableViewDefaultStyle.h"
-#import "ARUIButtonDefaultStyle.h"
+#import "UIButton+ARDefaultStyle.h"
 
 #import <QuartzCore/QuartzCore.h>
 
@@ -19,7 +19,6 @@
 - (void)viewDidLoad {
     
     [self.avatar defaultStyle];
-    [self.facebookBtn defaultStyle];
     [self.scrollView setContentSize:CGSizeMake(1000, 10000)];
     
 }
