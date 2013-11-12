@@ -55,7 +55,31 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 @interface UIColor (iOS7Colors)
 
+/**
+ *  Perform Class selector
+ *
+ *  @param selector Class message
+ *
+ *  @return id or nil
+ */
++ (id)performClassSelector:(SEL)selector;
+
+/**
+ *  Change hex string to UIColor
+ *
+ *  @param hexString Ex: "#ffffff", "#000000"
+ *
+ *  @return UIColor
+ */
 + (UIColor *)colorWithHexString:(NSString *)hexString;
+
+/**
+ *  Change hex to UIColor
+ *
+ *  @param hex Ex: 0xffffff, 0x000000
+ *
+ *  @return UIColor
+ */
 + (UIColor *)colorWithRGBHex:(UInt32)hex;
 
 // Metro Color

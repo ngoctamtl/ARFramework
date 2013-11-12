@@ -10,8 +10,15 @@
 #import "UIImageView+ARDefaultStyle.h"
 #import "UITableView+ARDefaultStyle.h"
 #import "UIButton+ARDefaultStyle.h"
+#import "UIColor+iOS7Colors.h"
 
 #import <QuartzCore/QuartzCore.h>
+
+@interface ARAboutMeController()
+
+@property (strong,nonatomic) NSArray *colors;
+
+@end
 
 
 @implementation ARAboutMeController
@@ -20,7 +27,7 @@
     
     [self.avatar defaultStyle];
     [self.scrollView setContentSize:CGSizeMake(1000, 10000)];
-    
+    self.colors = @[@"MetroCarrot", @"MetroGreen", @"MetroBlue"];
 }
 
 #pragma mark - Information TableView datasource
@@ -48,6 +55,14 @@
     cell.textLabel.text = @"Hello world";
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSString *color = self.colors[indexPath.row];
+    UIColor *rowColor = [UIColor performSelector:NSSelectorFromString(color)];
+    
+    [cell setBackgroundColor:rowColor];
 }
 
 @end

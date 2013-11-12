@@ -10,7 +10,14 @@
 
 @interface UIButton (ARDefaultStyle)
 
+/**
+ *  Button color in normal state
+ */
 @property (copy,nonatomic) UIColor *normalStateColor;
+
+/**
+ *  Button color in highlight state
+ */
 @property (copy,nonatomic) UIColor *highlightStateColor;
 
 /**

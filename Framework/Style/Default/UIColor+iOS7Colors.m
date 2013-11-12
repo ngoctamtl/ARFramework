@@ -30,8 +30,22 @@
 #define kMetroColorGreen        0x4bc1d2
 
 #import "UIColor+iOS7Colors.h"
+#import <objc/message.h>
 
 @implementation UIColor (iOS7Colors)
+
+#pragma mark - Selector dynamically
+
++ (id)performClassSelector:(SEL)selector {
+    
+    id value = objc_msgSend(self, selector);
+    
+    if (!value) {
+        
+        return nil;
+    }
+    return value;
+}
 
 #pragma mark - Convert color to UIColor
 

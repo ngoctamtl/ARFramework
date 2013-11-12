@@ -61,12 +61,20 @@ static char *KeyHighlightStateColor = "highlightStateColor";
 - (UIColor *)normalStateColor {
     
     UIColor *color = objc_getAssociatedObject(self, KeyNormalStateColor);
+    
+    if (!color) {
+        return nil;
+    }
     return color;
 }
 
 - (UIColor *)highlightStateColor {
     
     UIColor *color = objc_getAssociatedObject(self, KeyHighlightStateColor);
+    
+    if (!color) {
+        return nil;
+    }
     return color;
 }
 
