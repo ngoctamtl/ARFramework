@@ -1,15 +1,14 @@
 //
-//  ARUITableViewDefaultStyle.m
+//  UITableView+ARDefaultStyle.m
 //  Framework
 //
-//  Created by Nhat Huy on 11/11/13.
+//  Created by Nhat Huy on 11/12/13.
 //  Copyright (c) 2013 Mulodo Viet Nam. All rights reserved.
 //
 
-#import "ARUITableViewDefaultStyle.h"
-#import <QuartzCore/QuartzCore.h>
+#import "UITableView+ARDefaultStyle.h"
 
-@implementation  UITableView (ARCategoriesForUITableView)
+@implementation  UITableView (ARDefaultStyle)
 
 - (void)drawRect:(CGRect)rect {
     

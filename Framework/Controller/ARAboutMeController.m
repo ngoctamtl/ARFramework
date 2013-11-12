@@ -7,8 +7,8 @@
 //
 
 #import "ARAboutMeController.h"
-#import "ARUIImageViewDefaultStyle.h"
-#import "ARUITableViewDefaultStyle.h"
+#import "UIImageView+ARDefaultStyle.h"
+#import "UITableView+ARDefaultStyle.h"
 #import "UIButton+ARDefaultStyle.h"
 
 #import <QuartzCore/QuartzCore.h>

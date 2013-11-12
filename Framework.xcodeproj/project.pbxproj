@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3AC31EC11831C02600903369 /* UIColor+iOS7Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC31EC01831C02600903369 /* UIColor+iOS7Colors.m */; };
 		3AC31EC41831C07A00903369 /* UIButton+ARDefaultStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC31EC31831C07A00903369 /* UIButton+ARDefaultStyle.m */; };
+		3AC31EC81831CA4700903369 /* UITableView+ARDefaultStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC31EC71831CA4700903369 /* UITableView+ARDefaultStyle.m */; };
+		3AC31ECB1831CA9600903369 /* UIImageView+ARDefaultStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC31ECA1831CA9600903369 /* UIImageView+ARDefaultStyle.m */; };
 		3AC677FE1830AD9B003ABB2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC677FD1830AD9B003ABB2B /* Foundation.framework */; };
 		3AC678001830AD9B003ABB2B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC677FF1830AD9B003ABB2B /* CoreGraphics.framework */; };
 		3AC678021830AD9B003ABB2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC678011830AD9B003ABB2B /* UIKit.framework */; };
@@ -25,8 +27,6 @@
 		3AC678291830AD9B003ABB2B /* FrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC678281830AD9B003ABB2B /* FrameworkTests.m */; };
 		3AC678421830B2B7003ABB2B /* ARAboutMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC678411830B2B7003ABB2B /* ARAboutMeController.m */; };
 		3AC678461830B319003ABB2B /* AboutMeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AC678451830B319003ABB2B /* AboutMeView.xib */; };
-		3AC6784D1830C6B3003ABB2B /* ARUIImageViewDefaultStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC6784C1830C6B3003ABB2B /* ARUIImageViewDefaultStyle.m */; };
-		3AC678521830D124003ABB2B /* ARUITableViewDefaultStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC678511830D124003ABB2B /* ARUITableViewDefaultStyle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +44,10 @@
 		3AC31EC01831C02600903369 /* UIColor+iOS7Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+iOS7Colors.m"; path = "Style/Default/UIColor+iOS7Colors.m"; sourceTree = "<group>"; };
 		3AC31EC21831C07A00903369 /* UIButton+ARDefaultStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+ARDefaultStyle.h"; path = "Style/Default/UIButton+ARDefaultStyle.h"; sourceTree = "<group>"; };
 		3AC31EC31831C07A00903369 /* UIButton+ARDefaultStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+ARDefaultStyle.m"; path = "Style/Default/UIButton+ARDefaultStyle.m"; sourceTree = "<group>"; };
+		3AC31EC61831CA4700903369 /* UITableView+ARDefaultStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableView+ARDefaultStyle.h"; path = "Style/Default/UITableView+ARDefaultStyle.h"; sourceTree = "<group>"; };
+		3AC31EC71831CA4700903369 /* UITableView+ARDefaultStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableView+ARDefaultStyle.m"; path = "Style/Default/UITableView+ARDefaultStyle.m"; sourceTree = "<group>"; };
+		3AC31EC91831CA9600903369 /* UIImageView+ARDefaultStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+ARDefaultStyle.h"; path = "Style/Default/UIImageView+ARDefaultStyle.h"; sourceTree = "<group>"; };
+		3AC31ECA1831CA9600903369 /* UIImageView+ARDefaultStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+ARDefaultStyle.m"; path = "Style/Default/UIImageView+ARDefaultStyle.m"; sourceTree = "<group>"; };
 		3AC677FA1830AD9B003ABB2B /* Framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Framework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC677FD1830AD9B003ABB2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3AC677FF1830AD9B003ABB2B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,10 +70,6 @@
 		3AC678401830B2B7003ABB2B /* ARAboutMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARAboutMeController.h; path = Controller/ARAboutMeController.h; sourceTree = "<group>"; };
 		3AC678411830B2B7003ABB2B /* ARAboutMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARAboutMeController.m; path = Controller/ARAboutMeController.m; sourceTree = "<group>"; };
 		3AC678451830B319003ABB2B /* AboutMeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutMeView.xib; path = View/AboutMeView.xib; sourceTree = "<group>"; };
-		3AC6784B1830C6B3003ABB2B /* ARUIImageViewDefaultStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARUIImageViewDefaultStyle.h; path = Style/Default/ARUIImageViewDefaultStyle.h; sourceTree = "<group>"; };
-		3AC6784C1830C6B3003ABB2B /* ARUIImageViewDefaultStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARUIImageViewDefaultStyle.m; path = Style/Default/ARUIImageViewDefaultStyle.m; sourceTree = "<group>"; };
-		3AC678501830D124003ABB2B /* ARUITableViewDefaultStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARUITableViewDefaultStyle.h; path = Style/Default/ARUITableViewDefaultStyle.h; sourceTree = "<group>"; };
-		3AC678511830D124003ABB2B /* ARUITableViewDefaultStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARUITableViewDefaultStyle.m; path = Style/Default/ARUITableViewDefaultStyle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,8 +300,8 @@
 		3AC6784E1830D0EF003ABB2B /* UIImageView */ = {
 			isa = PBXGroup;
 			children = (
-				3AC6784B1830C6B3003ABB2B /* ARUIImageViewDefaultStyle.h */,
-				3AC6784C1830C6B3003ABB2B /* ARUIImageViewDefaultStyle.m */,
+				3AC31EC91831CA9600903369 /* UIImageView+ARDefaultStyle.h */,
+				3AC31ECA1831CA9600903369 /* UIImageView+ARDefaultStyle.m */,
 			);
 			name = UIImageView;
 			sourceTree = "<group>";
@@ -309,8 +309,8 @@
 		3AC6784F1830D0FA003ABB2B /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
-				3AC678501830D124003ABB2B /* ARUITableViewDefaultStyle.h */,
-				3AC678511830D124003ABB2B /* ARUITableViewDefaultStyle.m */,
+				3AC31EC61831CA4700903369 /* UITableView+ARDefaultStyle.h */,
+				3AC31EC71831CA4700903369 /* UITableView+ARDefaultStyle.m */,
 			);
 			name = UITableView;
 			sourceTree = "<group>";
@@ -423,14 +423,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC31ECB1831CA9600903369 /* UIImageView+ARDefaultStyle.m in Sources */,
 				3AC31EC41831C07A00903369 /* UIButton+ARDefaultStyle.m in Sources */,
-				3AC678521830D124003ABB2B /* ARUITableViewDefaultStyle.m in Sources */,
 				3AC678421830B2B7003ABB2B /* ARAboutMeController.m in Sources */,
 				3AC6780A1830AD9B003ABB2B /* main.m in Sources */,
+				3AC31EC81831CA4700903369 /* UITableView+ARDefaultStyle.m in Sources */,
 				3AC31EC11831C02600903369 /* UIColor+iOS7Colors.m in Sources */,
 				3AC678141830AD9B003ABB2B /* ARViewController.m in Sources */,
 				3AC6780E1830AD9B003ABB2B /* ARAppDelegate.m in Sources */,
-				3AC6784D1830C6B3003ABB2B /* ARUIImageViewDefaultStyle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

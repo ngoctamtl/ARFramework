@@ -1,15 +1,15 @@
 //
-//  ARUIImageViewDefaultStyle.m
+//  UIImageView+ARDefaultStyle.m
 //  Framework
 //
-//  Created by Nhat Huy on 11/11/13.
+//  Created by Nhat Huy on 11/12/13.
 //  Copyright (c) 2013 Mulodo Viet Nam. All rights reserved.
 //
 
-#import "ARUIImageViewDefaultStyle.h"
+#import "UIImageView+ARDefaultStyle.h"
 #import <QuartzCore/QuartzCore.h>
 
-@implementation UIImageView (ARCategoriesForUIImageView)
+@implementation UIImageView (ARDefaultStyle)
 
 - (void)drawRect:(CGRect)rect {
     
